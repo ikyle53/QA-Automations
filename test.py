@@ -4,10 +4,10 @@ from selenium.webdriver.chrome.options import Options
 import time
 
 # Path to Chrome Browser
-chrome_path = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
+chrome_path = r"Path\To\Chrome\Browser.exe"
 
 # Path to ChromeDriver
-chromedriver_path = r"C:\Users\KyleH\ChromeDriver\chromedriver-win64\chromedriver.exe"
+chromedriver_path = r"Path\To\Chrome\Driver.exe"
 
 # Set up options for Brave
 options = Options()
