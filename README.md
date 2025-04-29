@@ -46,3 +46,22 @@ driver = webdriver.Chrome(service=Service(ChromeDriverManage().install()))
 `webdriver.Chrome(service=...)` initializes a new Chrome browser instance controlled by Selenium. It passes the Service object into the constructor so it knows which ChromeDriver to use.
 
 Lastly, `driver`- the variable- is going to let us open URL's, interact with elements, run automation tasks, scrape content, etc.
+
+## Selenium Basics
+
+Selenium is made up of 8 main components:
+1. Starting the session
+2. Taking action on the browser
+3. Requesting browser information
+4. Establishing a waiting strategy
+5. Finding an element
+6. Taking an action on the element
+7. Requesting element information
+8. Ending the session
+
+The common uses cases for Selenium:
+- Repetitive tasks
+- Web scraping
+- Testing
+
+The cool thing is that all the endpoints listed in [W3C](https://w3c.github.io/webdriver/) are supported by Selenium. It also adds a lot of extra capabilities that aren't listed in W3C.
