@@ -65,3 +65,29 @@ The common uses cases for Selenium:
 - Testing
 
 The cool thing is that all the endpoints listed in [W3C](https://w3c.github.io/webdriver/) are supported by Selenium. It also adds a lot of extra capabilities that aren't listed in W3C.
+
+## Most common Selenium endpoints
+
+### Session and navigation
+
+POST / session = `webdriver.Chrome()`, `webdriver.Firefox()`
+DELETE / session / {id} = `driver.quit()`
+GET / session / {id} / url = `driver.current_url`
+POST / session / {id} / url = `driver.get("https://example.com")`
+GET / session / {id} / title = `driver.title`
+POST / session / {id} / back = `driver.back()`
+POST / session / {id} / forward = `driver.forward()`
+POST / session / {id} / refresh = `driver.refresh()`
+
+### Element location and interaction
+
+POST / session / {id} / element = `driver.find_element(By.ID, "exampleID")`
+POST / session / {id} / elements = `driver.find_elements(By.CLASS_NAME, "exampleClass")`
+GET / session / {id} / element / {id} / text = `element.text`
+POST / session / {id} / element / {id} / click = `element.click()`
+POST / session / {id} / element / {id} / value = `element.send_keys("Hello!")`
+GET / session / {id} / element / {id} / attribute / {name} = `element.get_attribute("href")`
+
+### Window and frame
+
+POST / session / {id} / window = `driver.switch_to.window(window_handle)`
